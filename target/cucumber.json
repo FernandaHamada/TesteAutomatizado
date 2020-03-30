@@ -1,0 +1,142 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#encoding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#author: Fernanda Kubayashi"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13794040500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenarioWebWindows()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Validar mensagem de sucesso ao deletar um usuário",
+        "description": "",
+        "id": "deletar-usuário;validar-mensagem-de-sucesso-ao-deletar-um-usuário",
+        "after": [
+          {
+            "result": {
+              "duration": 810407100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenarioWeb(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2143801100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que acesso a pagina de lista de usuários",
+            "match": {
+              "location": "InitTestStepWeb.queAcessoAListaDeUsuario()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 8668200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "estou realizando o teste",
+            "match": {
+              "location": "InitTestStepWeb.estouRealizandoOTeste(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Numero do CT",
+                  "Nome do CT",
+                  "Nome do executor",
+                  "Sprint"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "123-XXX",
+                  "Descricao com o nome do caso de teste",
+                  "Marcos Barbosa",
+                  "Sprint 3"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 71040631000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027delete\u0027) and parent::td/parent::tr/child::td[contains(text(),\u0027Bruna\u0027)]]\"}\n  (Session info: chrome\u003d80.0.3987.149)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027NOTE_PE0355XU\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\\Users\\FERNAN~1.KUB\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64108}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 1a517a8b77e4c775a64f5b4e990e2495\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(text(),\u0027delete\u0027) and parent::td/parent::tr/child::td[contains(text(),\u0027Bruna\u0027)]]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)\r\n\tat br.com.application.name.web.funcionalidade.DeletarUsuarioWebFuncionalidade.acessarNomeDoUsuario(DeletarUsuarioWebFuncionalidade.java:22)\r\n\tat br.com.appName.steps.web.InitTestStepWeb.buscaPeloNomeDeletar(InitTestStepWeb.java:53)\r\n\tat ✽.E busco pelo nome a ser deletado(features/Delete.feature:15)\r\n",
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "busco pelo nome a ser deletado",
+            "match": {
+              "location": "InitTestStepWeb.buscaPeloNomeDeletar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "visualizo a mensagem de delete \"Seu Usuário foi removido com sucesso!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Seu Usuário foi removido com sucesso!",
+                  "offset": 32
+                }
+              ],
+              "location": "DeleteWebStep.visualizoAMensagemDeDelete(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@web"
+          },
+          {
+            "line": 8,
+            "name": "@apagar1"
+          }
+        ]
+      }
+    ],
+    "name": "Deletar usuário",
+    "description": "",
+    "id": "deletar-usuário",
+    "keyword": "Funcionalidade",
+    "uri": "features/Delete.feature"
+  }
+]
